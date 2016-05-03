@@ -19,6 +19,7 @@ Follow the instructions of `yo python-lib`.
 
 ```bash
 $ python setup.py test
+$ python setup.py install
 $ mkdir docs
 $ cd docs
 $ sphinx-quickstart
@@ -26,13 +27,11 @@ $ sphinx-quickstart
 
 Follow the instructions of `sphinx-quickstart`.
 
-
 Add `sys.path.insert(0, os.path.abspath('../..'))` to `conf.py` after `sphinx-quickstart` is finished,
 
 ```bash
 $ sphinx-apidoc -f -o source/ ../python_lib_sphinx/
 $ make html
-$ python setup.py install
 ```
 
 The generated documentation is located at `_build/html/index.html`.
