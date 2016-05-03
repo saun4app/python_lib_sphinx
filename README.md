@@ -11,8 +11,6 @@ Run:
 ```bash
 $ npm install -g yo
 $ npm install -g generator-python-lib
-$ mkdir python_lib_sphinx
-$ cd python_lib_sphinx
 $ virtualenv --python=python3 venv
 $ source ./venv/bin/activate
 ```
@@ -21,6 +19,8 @@ $ source ./venv/bin/activate
 
 Run:
 ```bash
+$ mkdir python_lib_sphinx
+$ cd python_lib_sphinx
 $ yo python-lib
 ```
 
