@@ -5,7 +5,7 @@
 
 This is a supplemental example for [`generator-python-lib`](https://github.com/hbetts/generator-python-lib) to crate a Python library with documentation using [`Sphinx`](https://pypi.python.org/pypi/Sphinx).
 
-- Install python-lib
+## Install python-lib
 
 Run:
 ```bash
@@ -15,7 +15,7 @@ $ virtualenv --python=python3 venv
 $ source ./venv/bin/activate
 ```
 
-- Setup new library
+## Setup new library & housekeeping
 
 Run:
 ```bash
@@ -52,7 +52,7 @@ $ cd docs
 $ sphinx-quickstart
 ```
 
-- Setup `sphinx`
+## Setup `sphinx`
 
 Run:
 ```bash
