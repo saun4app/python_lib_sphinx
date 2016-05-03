@@ -5,6 +5,9 @@
 
 This is a supplemental example for [`generator-python-lib`](https://github.com/hbetts/generator-python-lib) to crate a Python library with documentation using [`Sphinx`](https://pypi.python.org/pypi/Sphinx).
 
+- Install python-lib
+
+Run:
 ```bash
 $ npm install -g yo
 $ npm install -g generator-python-lib
@@ -12,11 +15,35 @@ $ mkdir python_lib_sphinx
 $ cd python_lib_sphinx
 $ virtualenv --python=python3 venv
 $ source ./venv/bin/activate
+```
+
+- Setup new library
+
+Run:
+```bash
 $ yo python-lib
 ```
 
 Follow the instructions of `yo python-lib`.
 
+Add `Sphinx`, `docutils`, `Jinja2` to `requirements-dev.txt`
+
+`requirements-dev.txt`:
+
+```
+codecov==2.0.3
+coverage==4.0.3
+pluggy==0.3.1
+py==1.4.31
+requests==2.10.0
+tox==2.3.1
+virtualenv==15.0.1
+Sphinx==1.4.1
+docutils==0.12
+Jinja2==2.8
+```
+
+Run:
 ```bash
 $ python setup.py test
 $ python setup.py install
@@ -25,9 +52,20 @@ $ cd docs
 $ sphinx-quickstart
 ```
 
+- Setup `sphinx`
+
+Run:
+```bash
+$ mkdir docs
+$ cd docs
+$ sphinx-quickstart
+```
+
 Follow the instructions of `sphinx-quickstart`.
 
 Add `sys.path.insert(0, os.path.abspath('../..'))` to `conf.py` after `sphinx-quickstart` is finished,
+
+Run:
 
 ```bash
 $ sphinx-apidoc -f -o source/ ../python_lib_sphinx/
