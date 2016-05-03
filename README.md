@@ -47,9 +47,6 @@ Run:
 ```bash
 $ python setup.py test
 $ python setup.py install
-$ mkdir docs
-$ cd docs
-$ sphinx-quickstart
 ```
 
 ## Setup `sphinx`
