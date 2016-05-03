@@ -69,7 +69,7 @@ $ sphinx-apidoc -f -o source/ ../python_lib_sphinx/
 $ make html
 ```
 
-The generated documentation is located at `_build/html/index.html`.
+The generated documentation is located at `docs/_build/html/index.html`.
 
 ## References
 
