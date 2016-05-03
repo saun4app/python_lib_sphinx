@@ -10,12 +10,12 @@ $ npm install -g yo
 $ npm install -g generator-python-lib
 $ mkdir python_lib_sphinx
 $ cd python_lib_sphinx
-$ yo python-lib
 $ virtualenv --python=python3 venv
 $ source ./venv/bin/activate
+$ yo python-lib
 ```
 
-Follow the instructions.
+Follow the instructions of `yo python-lib`.
 
 ```bash
 $ python setup.py test
@@ -24,9 +24,10 @@ $ cd docs
 $ sphinx-quickstart
 ```
 
-Follow the instructions.
+Follow the instructions of `sphinx-quickstart`.
 
-Add `sys.path.insert(0, os.path.abspath('../..'))` to `conf.py`.
+
+Add `sys.path.insert(0, os.path.abspath('../..'))` to `conf.py` after `sphinx-quickstart` is finished,
 
 ```bash
 $ sphinx-apidoc -f -o source/ ../python_lib_sphinx/
