@@ -71,7 +71,7 @@ $ make html
 
 The generated documentation page is located at `docs/_build/html/index.html`.
 
-### `utils` module document result looks like the following:
+### `utils` module document looks like the following:
 
 
 <span id="python-lib-sphinx-utils-module"></span><h2>python_lib_sphinx.utils module<a class="headerlink" href="#module-python_lib_sphinx.utils" title="Permalink to this headline">¶</a></h2>
