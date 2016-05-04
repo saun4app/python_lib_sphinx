@@ -11,6 +11,7 @@ Run:
 ```bash
 $ npm install -g yo
 $ npm install -g generator-python-lib
+$ pip install virtualenv
 $ virtualenv --python=python3 venv
 $ source ./venv/bin/activate
 ```
