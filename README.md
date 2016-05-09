@@ -27,26 +27,10 @@ $ yo python-lib
 
 Follow the instructions of `yo python-lib`.
 
-Add `Sphinx`, `docutils`, `Jinja2` to `requirements-dev.txt`
-
-`requirements-dev.txt`:
-
-```
-codecov==2.0.3
-coverage==4.0.3
-pluggy==0.3.1
-py==1.4.31
-requests==2.10.0
-tox==2.3.1
-virtualenv==15.0.1
-Sphinx==1.4.1
-docutils==0.12
-Jinja2==2.8
-```
-
 Run:
 ```bash
 $ python setup.py test
+$ python setup.py coverage
 $ python setup.py install
 ```
 
